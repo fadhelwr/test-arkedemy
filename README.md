@@ -1,6 +1,5 @@
 # Test Bootcamp Arkademy
 Nama : Fadhel Widya Rakhman
-Asal : Purwokerto
 
 # Keterangan nomor soal
 1. biodata.json
