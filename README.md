@@ -8,4 +8,4 @@ Nama : Fadhel Widya Rakhman
 4. cetakGambarGanjil.java
 5. acakString.java
 6. a.) nomor6/soalA
-   b.) nomor6/soalB
+6. b.) nomor6/soalB
