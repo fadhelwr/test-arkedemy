@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRUD MOCKUP</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body style="background: #FFFFFF">
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Arkademy</a>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+
+        <div class="col-lg-12" style="margin-top: 15px;">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="table-responsive">
+                    <button class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#addData" style="margin-bottom: 10px;">ADD</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="addData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">ADD DATA</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>Work..</option>
+                                                <option>Frontend Dev</option>
+                                                <option>Backend Dev</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>Salary</option>
+                                                <option>Rp.10.000.000</option>
+                                                <option>Rp.12.000.000</option>
+                                            </select>
+                                        </div>
+                                    </form>    
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="submit" class="btn btn-warning" value="ADD"/>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+
+                    <table class="table table-bordered">
+                        <thead style="background: #CCCCCC;text-align: center">
+                            <tr>
+                                <th>Name</th>
+                                <th>Work</th>
+                                <th>Salary</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background: #FFFFFF;text-align: center">
+                            <tr>
+                                <td>Rebecca</td>
+                                <td>Frontend Dev</td>
+                                <td>Rp.10.000.000</td>
+                                <td>
+                                    <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#deleteData"><i class="fa fa-trash-o"></i></button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="deleteData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <button class="btn btn-lg btn-success btn-circle center"><i class="fa fa-check"></i></button>
+                                                    <h4>Data Rebecca telah berhasil dihapus</h4>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+                                    <!-- /.modal -->
+                                    
+                                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#editData"><i class="fa fa-edit"></i></button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="editData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">EDIT DATA</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <input class="form-control" value="Rebecca">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>Frontend Dev</option>
+                                                                <option>Frontend Dev</option>
+                                                                <option>Backend Dev</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>10.000.000</option>
+                                                                <option>Rp.10.000.000</option>
+                                                                <option>Rp.12.000.000</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>    
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="btn btn-warning" value="EDIT"/>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+                                    <!-- /.modal -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vita</td>
+                                <td>Backend Dev</td>
+                                <td>Rp.12.000.000</td>
+                                <td>
+                                    <a class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                    <a class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Huda</td>
+                                <td>Backend Dev</td>
+                                <td>Rp.12.000.000</td>
+                                <td>
+                                    <a class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                    <a class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kiky</td>
+                                <td>Frontend Dev</td>
+                                <td>Rp.10.000.000</td>
+                                <td>
+                                    <a class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                    <a class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+    <script src="js/demo/dashboard-demo.js"></script>
+
+</body>
+
+</html>

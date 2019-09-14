@@ -1,0 +1,51 @@
+{
+    "biodata" : {
+        "name": "Fadhel Widya Rakhman",
+        "age": 22,
+        "address": "Purwokerto, Central Java",
+        "hobbies": [
+            "Sports",
+            "Music"
+        ],
+        "is_married": false,
+        "list_school": [
+            {
+                "name": "STMIK Amikom Purwokerto",
+                "year_in" : "2015",
+                "year_out": "2019",
+                "major": "Teknik Informatika"
+            }
+        ],
+        "skills": [
+            {
+                "skill_name": "Android Studio",
+                "level": "Beginner"
+            },
+            {
+                "skill_name": "CodeIgniter",
+                "level": "Beginner"
+            },
+            {
+                "skill_name": "JavaScript",
+                "level": "Beginner"
+            },
+            {
+                "skill_name": "CSS",
+                "level": "Beginner"
+            },
+            {
+                "skill_name": "PHP Native",
+                "level": "Beginner"
+            },
+            {
+                "skill_name": "HTML",
+                "level": "Advance"
+            },
+            {
+                "skill_name": "Bootstrap",
+                "level": "Beginner"
+            }
+        ],
+        "interest_in_coding": true
+    }
+}
