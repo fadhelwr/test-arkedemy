@@ -10,7 +10,7 @@ Nama : Fadhel Widya Rakhman
 6. a.) nomor6/soalA
 ![join](https://user-images.githubusercontent.com/52600500/64910516-6e9ade00-d741-11e9-899f-f599725db6b3.PNG)
 
-6. b.) nomor6/soalB
+b.) nomor6/soalB
 => home
 ![home](https://user-images.githubusercontent.com/52600500/64910534-99853200-d741-11e9-80d6-f9f9756206f4.PNG)
 
